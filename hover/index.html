@@ -8,10 +8,11 @@
   <title>Document</title>
   <link rel="stylesheet" href="/hover/css/hover.css" />
 
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <style>
-  body {
+  body, ul,
+  li{
     margin: 0;
     padding: 0;
   }
@@ -21,14 +22,22 @@
     height: 100%;
     position: fixed;
     z-index: 99;
+    border-right: 1px solid #000;
+
   }
 
   .exm1 {
     width: 100%;
     height: 107px;
+    /* text-align: center; */
+    z-index: 100;
+    
+  }
+  .hover1{
+    text-align: center;
   }
 
-  #header::before {
+  #header:before {
     display: block;
     width: 100%;
     height: 100%;
@@ -49,27 +58,50 @@
     transition: 0.1s;
   }
 
-  ul,
-  li {
+  ul,  li {
     list-style: none;
-    margin: 0;
-    padding: 0;
+   
   }
 
   .test1 {
     position: absolute;
-    width: 308px;
+    width: 1500px;
+    height: 100%;
     top: 0;
     bottom: 0;
     left: 95px;
-    background: rgba(243, 245, 255, 0.97);
-    z-index: 103;
+    /* background: black; */
+    /* border: 1px solid gray; */
+    z-index: 105;
     display: none;
-    padding: 35px 28px;
+    /* padding: 35px 28px; */
     box-sizing: border-box;
+    opacity: 1;
 
   }
 
+  .test1_1{
+    position: relative;
+    width:   308px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(243, 245, 255, 0.97);
+    z-index: 103;
+    /* display: none; */
+    padding: 35px 28px;
+    box-sizing: border-box;
+  }
+  .headernav .exm1 > a{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    /* line-height: 20px; */
+    /* position: relative; */
+    padding: 53px 0 0;
+    
+  }
   .exm1:hover .test1 {
     display: block;
   }
@@ -80,7 +112,7 @@
   .allopen {
     width: 100%;
     height: 96px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #000;
     margin: auto;
   }
 
@@ -148,7 +180,12 @@
   }
 </style>
 
-<body style="background-color: dimgray;">
+<body 
+style=
+"
+/* background-color: darkslategray; */
+"
+>
   <header id="header">
     <!-- <div class=""> -->
     <div class="allopen">
@@ -160,44 +197,54 @@
       </label>
     </div>
     <!-- nav -->
-    <nav class="">
+    <nav class="headernav">
       <ul>
         <li class="exm1">
-          <a class="hover1" for="test1">데스트아이콘</a>
+          <a class="hover1" >데스트<br>아이콘</a>
           <div class="test1">
-            <p href="">데이터1</a>
+            <div class="test1_1">
+              <p href="">데이터1</a>
+
+                <p>안데이터</p>
+                <ul>
+                  <li>서브1</li>
+                  <li>서브2</li>
+                  <li>서브3</li>
+            </div>
+            <!-- <p href="">데이터1</a>
 
             <p>안데이터</p>
             <ul>
               <li>서브1</li>
               <li>서브2</li>
               <li>서브3</li>
-            </ul>
+            </ul> -->
           </div>
+          
         </li>
 
         <li class="exm1 ">
           <a href="">데이터2</a>
           <div class="test1">
-            <p href="">데이터1</a>
+            <p href="">데이터2-1</a>
 
             <p>안데이터</p>
             <ul>
-              <li>서브1</li>
               <li>서브2</li>
-              <li>서브3</li>
+              <li>서브2</li>
+              <li>서브2</li>
             </ul>
           </div>
         </li>
         <li class="exm1">
           <a href="">데이터3</a>
           <div class="test1">
-            <p href="">데이터1</a>
+            <p href="">데이터3-1</a>
 
             <p>안데이터</p>
             <ul>
-              <li>서브1</li>
-              <li>서브2</li>
+              <li>서브3</li>
+              <li>서브3</li>
               <li>서브3</li>
             </ul>
           </div>
@@ -207,11 +254,11 @@
           <div class="test1">
             <p href="">데이터1</a>
 
-            <p>안데이터</p>
+            <p>안데이터4</p>
             <ul>
-              <li>서브1</li>
-              <li>서브2</li>
-              <li>서브3</li>
+              <li>서브4</li>
+              <li>서브4</li>
+              <li>서브4</li>
             </ul>
           </div>
         </li>
@@ -220,11 +267,11 @@
           <div class="test1">
             <p href="">데이터1</a>
 
-            <p>안데이터</p>
+            <p>안데이터5</p>
             <ul>
-              <li>서브1</li>
-              <li>서브2</li>
-              <li>서브3</li>
+              <li>서브5</li>
+              <li>서브5</li>
+              <li>서브5</li>
             </ul>
           </div>
         </li>
