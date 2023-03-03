@@ -10,183 +10,47 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
-<style>
-  body, ul,
-  li{
-    margin: 0;
-    padding: 0;
-  }
+ <script>
+  $(function () {
 
-  #header {
-    width: 95px;
-    height: 100%;
-    position: fixed;
-    z-index: 99;
-    border-right: 1px solid #000;
-
-  }
-
-  .exm1 {
-    width: 100%;
-    height: 107px;
-    /* text-align: center; */
-    z-index: 100;
-    
-  }
-  .hover1{
-    text-align: center;
-  }
-
-  #header:before {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 96px;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition-duration: 0.4s;
-    opacity: 0;
-    visibility: hidden;
-    content: '';
-    z-index: 99;
-  }
-
-  .exm1:hover {
-    background-color: rgba(243, 245, 255, 0.97);
-    transition: 0.1s;
-  }
-
-  ul,  li {
-    list-style: none;
-   
-  }
-
-  .test1 {
-    position: absolute;
-    width: 1500px;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 95px;
-    /* background: black; */
-    /* border: 1px solid gray; */
-    z-index: 105;
-    display: none;
-    /* padding: 35px 28px; */
-    box-sizing: border-box;
-    opacity: 1;
-
-  }
-
-  .test1_1{
-    position: relative;
-    width:   308px;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(243, 245, 255, 0.97);
-    z-index: 103;
-    /* display: none; */
-    padding: 35px 28px;
-    box-sizing: border-box;
-  }
-  .headernav .exm1 > a{
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    /* line-height: 20px; */
-    /* position: relative; */
-    padding: 53px 0 0;
-    
-  }
-  .exm1:hover .test1 {
-    display: block;
-  }
-
-  /* 햄버거 반응 */
+/* ---- ---- ---- ----HEADER---- ---- ---- ---- */
 
 
-  .allopen {
-    width: 100%;
-    height: 96px;
-    border-bottom: 1px solid #000;
-    margin: auto;
-  }
+// $(".header__nav nav .depth1 > a").on("mouseenter focus", function () {
+//     $(".header__nav nav .depth2_wrap").hide();
+//     $(this).next(".depth2_wrap").show();
 
-  #xwith {
-    top: 25%;
-    margin: auto;
+//     $(".header__nav nav .depth1").removeClass("on");
+//     $(this).parent('li').addClass('on');
+//     $("#header").addClass("on");
+// });
+// $(".header__nav nav").mouseleave(function () {
+//     $(".header__nav nav .depth2_wrap").hide();
+//     $("#header").removeClass("on");
+//     $(".header__nav nav .depth1").removeClass("on");
+// });
 
-  }
+$(".headernav ").on("mouseenter", function(){
+  console.log("in!")
 
-  input[id="hamburger"] {
-    display: none;
-  }
+  $("#header").addClass("on");
 
-  input[id="hamburger"]+label {
-    display: block;
-    width: 60px;
-    height: 40px;
-    position: relative;
-    cursor: pointer;
-  }
 
-  input[id="hamburger"]+label span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    border-radius: 30px;
-    background: #000;
-    transition: all 0.35s;
-  }
+})
+$(".headernav ").mouseleave( function(){
+  console.log("out!")
+  $("#header").removeClass("on");
 
-  input[id="hamburger"]+label span:nth-child(1) {
-    top: 0;
-  }
+ 
+})
 
-  input[id="hamburger"]+label span:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
-  }
+});
 
-  input[id="hamburger"]+label span:nth-child(3) {
-    bottom: 0;
-  }
+ </script>
 
-  input[id="hamburger"]:hover+label {
-    z-index: 99;
-  }
-
-  input[id="hamburger"]:hover+label span {
-    background: black;
-  }
-
-  input[id="hamburger"]:hover+label span:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-  }
-
-  input[id="hamburger"]:hover+label span:nth-child(2) {
-    opacity: 0;
-  }
-
-  input[id="hamburger"]:hover+label span:nth-child(3) {
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
-  }
-</style>
-
-<body 
-style=
-"
-/* background-color: darkslategray; */
-"
->
-  <header id="header">
+<body>
+  <section>
+  <header id="header" class="">
     <!-- <div class=""> -->
     <div class="allopen">
       <input type="checkbox" id="hamburger" />
@@ -202,29 +66,21 @@ style=
         <li class="exm1">
           <a class="hover1" >데스트<br>아이콘</a>
           <div class="test1">
-            <div class="test1_1">
-              <p href="">데이터1</a>
-
-                <p>안데이터</p>
-                <ul>
-                  <li>서브1</li>
-                  <li>서브2</li>
-                  <li>서브3</li>
-            </div>
-            <!-- <p href="">데이터1</a>
+        
+            <p href="">데이터1</a>
 
             <p>안데이터</p>
             <ul>
               <li>서브1</li>
               <li>서브2</li>
               <li>서브3</li>
-            </ul> -->
+            </ul>
           </div>
           
         </li>
 
         <li class="exm1 ">
-          <a href="">데이터2</a>
+          <a class="hover1" >데스트2<br>아이콘</a>
           <div class="test1">
             <p href="">데이터2-1</a>
 
@@ -237,7 +93,7 @@ style=
           </div>
         </li>
         <li class="exm1">
-          <a href="">데이터3</a>
+          <a class="hover1" >데스트3<br>아이콘</a>
           <div class="test1">
             <p href="">데이터3-1</a>
 
@@ -250,7 +106,7 @@ style=
           </div>
         </li>
         <li class="exm1">
-          <a href="">데이터4</a>
+          <a class="hover1" >데스트4<br>아이콘</a>
           <div class="test1">
             <p href="">데이터1</a>
 
@@ -263,7 +119,7 @@ style=
           </div>
         </li>
         <li class="exm1">
-          <a href="">데이터5</a>
+          <a class="hover1" >데스트5<br>아이콘</a>
           <div class="test1">
             <p href="">데이터1</a>
 
@@ -279,8 +135,15 @@ style=
     </nav>
 
 
-    <!-- </div> -->
+    
   </header>
+</section>
+  <div class="main" style="width: 100%; height: 1000px; background-color: rgb(203, 203, 224);">
+    <div style="width: 100%; height: 300px; background-color: rgb(203, 203, 224);">센터</div>
+    <div style="width: 100%; height: 300px; background-color: rgb(65, 65, 126);">센터2</div>
+    <div style="width: 100%; height: 300px; background-color: rgb(0, 0, 252);">센터3</div>
+    <div style="width: 100%; height: 300px; background-color: rgb(11, 11, 12);">센터4</div>
+  </div>
 </body>
 
 </html>
