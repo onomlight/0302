@@ -1,34 +1,58 @@
-body, ul,
-li{
+body,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+.text1 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 0 0 25px;
+}
+.sub_text {
+  margin: 15px 0 0 0;
+}
 
+.sub_text > li {
+  /* background: linear-gradient(to left, #ebeef8 60%, #a1a1a1 60%); */
+  line-height: 60px;
+  margin: 0 0 0 25px;
+  font-size: 17px;
+}
+.sub_text > li a {
+  color: #000;
+  display: block;
+}
 #header {
   width: 95px;
   height: 100%;
   position: fixed;
+
   z-index: 99;
   border-right: 1px solid #000;
-
+  background-color: gray;
 }
-.on{
-    opacity: 1; 
-    visibility: visible; 
+.on {
+  opacity: 1;
+  visibility: visible;
 }
 .exm1 {
   width: 100%;
   height: 107px;
-  
+
   z-index: 100;
-  
 }
-.hover1{
+.hover1 {
   text-align: center;
+  font-weight: 800;
+  color: rgba(243, 245, 255, 0.97);
 }
 #header.on:before {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 #header:before {
   display: block;
@@ -42,15 +66,14 @@ li{
   transition-duration: 0.4s;
   opacity: 0;
   visibility: hidden;
- 
-  content: '';
+
+  content: "";
   z-index: 99;
 }
 
-
-ul,  li {
+ul,
+li {
   list-style: none;
-  
 }
 .test1 {
   position: absolute;
@@ -63,18 +86,15 @@ ul,  li {
   display: none;
   padding: 35px 28px;
   box-sizing: border-box;
-  
 }
 
-
-.headernav .exm1 > a{
+.headernav .exm1 > a {
   display: block;
   text-align: center;
   font-size: 14px;
   /* line-height: 20px; */
   /* position: relative; */
   padding: 53px 0 0;
-  
 }
 
 .exm1:hover {
@@ -84,9 +104,10 @@ ul,  li {
 .exm1:hover .test1 {
   display: block;
 }
-
+.hover1:hover {
+  color: gray;
+}
 /* 햄버거 반응 */
-
 
 .allopen {
   width: 100%;
@@ -98,14 +119,13 @@ ul,  li {
 #xwith {
   top: 25%;
   margin: auto;
-
 }
 
 input[id="hamburger"] {
   display: none;
 }
 
-input[id="hamburger"]+label {
+input[id="hamburger"] + label {
   display: block;
   width: 60px;
   height: 40px;
@@ -113,7 +133,7 @@ input[id="hamburger"]+label {
   cursor: pointer;
 }
 
-input[id="hamburger"]+label span {
+input[id="hamburger"] + label span {
   display: block;
   position: absolute;
   width: 100%;
@@ -123,37 +143,37 @@ input[id="hamburger"]+label span {
   transition: all 0.35s;
 }
 
-input[id="hamburger"]+label span:nth-child(1) {
+input[id="hamburger"] + label span:nth-child(1) {
   top: 0;
 }
 
-input[id="hamburger"]+label span:nth-child(2) {
+input[id="hamburger"] + label span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input[id="hamburger"]+label span:nth-child(3) {
+input[id="hamburger"] + label span:nth-child(3) {
   bottom: 0;
 }
 
-input[id="hamburger"]:hover+label {
+input[id="hamburger"]:hover + label {
   z-index: 99;
 }
 
-input[id="hamburger"]:hover+label span {
+input[id="hamburger"]:hover + label span {
   background: black;
 }
 
-input[id="hamburger"]:hover+label span:nth-child(1) {
+input[id="hamburger"]:hover + label span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
 }
 
-input[id="hamburger"]:hover+label span:nth-child(2) {
+input[id="hamburger"]:hover + label span:nth-child(2) {
   opacity: 0;
 }
 
-input[id="hamburger"]:hover+label span:nth-child(3) {
+input[id="hamburger"]:hover + label span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
 }

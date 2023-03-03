@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="/hover/css/hover.css" />
+  <link rel="stylesheet" href="./css/hover.css" />
 
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
@@ -52,6 +52,7 @@ $(".headernav ").mouseleave( function(){
   <section>
   <header id="header" class="">
     <!-- <div class=""> -->
+      <!-- 행오버 기능 햄버거 X 표시 -->
     <div class="allopen">
       <input type="checkbox" id="hamburger" />
       <label id="xwith" for="hamburger">
@@ -66,29 +67,24 @@ $(".headernav ").mouseleave( function(){
         <li class="exm1">
           <a class="hover1" >데스트<br>아이콘</a>
           <div class="test1">
-        
-            <p href="">데이터1</a>
-
-            <p>안데이터</p>
-            <ul>
+            <p class="text1" style="">데이터1</a>
+              <ul class="sub_text">
               <li>서브1</li>
               <li>서브2</li>
               <li>서브3</li>
             </ul>
           </div>
-          
         </li>
-
         <li class="exm1 ">
           <a class="hover1" >데스트2<br>아이콘</a>
           <div class="test1">
-            <p href="">데이터2-1</a>
-
-            <p>안데이터</p>
-            <ul>
-              <li>서브2</li>
-              <li>서브2</li>
-              <li>서브2</li>
+            <p class="text1">데이터2-1</a>
+            <ul class="sub_text">
+              <li><a href="#none">
+                서브2
+              </a></li>
+              <li><a href="">서브2</a></li>
+              <li><a href="">서브2</a></li>
             </ul>
           </div>
         </li>
@@ -96,8 +92,6 @@ $(".headernav ").mouseleave( function(){
           <a class="hover1" >데스트3<br>아이콘</a>
           <div class="test1">
             <p href="">데이터3-1</a>
-
-            <p>안데이터</p>
             <ul>
               <li>서브3</li>
               <li>서브3</li>
@@ -109,8 +103,6 @@ $(".headernav ").mouseleave( function(){
           <a class="hover1" >데스트4<br>아이콘</a>
           <div class="test1">
             <p href="">데이터1</a>
-
-            <p>안데이터4</p>
             <ul>
               <li>서브4</li>
               <li>서브4</li>
@@ -122,8 +114,28 @@ $(".headernav ").mouseleave( function(){
           <a class="hover1" >데스트5<br>아이콘</a>
           <div class="test1">
             <p href="">데이터1</a>
-
-            <p>안데이터5</p>
+            <ul>
+              <li>서브5</li>
+              <li>서브5</li>
+              <li>서브5</li>
+            </ul>
+          </div>
+        </li>
+        <li class="exm1">
+          <a class="hover1" >데스트5<br>아이콘</a>
+          <div class="test1">
+            <p href="">데이터1</a>
+            <ul>
+              <li>서브5</li>
+              <li>서브5</li>
+              <li>서브5</li>
+            </ul>
+          </div>
+        </li>
+           <li class="exm1">
+          <a class="hover1" >데스트5<br>아이콘</a>
+          <div class="test1">
+            <p href="">데이터1</a>
             <ul>
               <li>서브5</li>
               <li>서브5</li>
@@ -133,17 +145,16 @@ $(".headernav ").mouseleave( function(){
         </li>
       </ul>
     </nav>
-
-
-    
   </header>
 </section>
+<section style="border: 1px solid gray; position: relative; left: 95px;">
   <div class="main" style="width: 100%; height: 1000px; background-color: rgb(203, 203, 224);">
-    <div style="width: 100%; height: 300px; background-color: rgb(203, 203, 224);">센터</div>
-    <div style="width: 100%; height: 300px; background-color: rgb(65, 65, 126);">센터2</div>
-    <div style="width: 100%; height: 300px; background-color: rgb(0, 0, 252);">센터3</div>
-    <div style="width: 100%; height: 300px; background-color: rgb(11, 11, 12);">센터4</div>
+    <div style="width: 100%; height: 500px; background-color: rgb(203, 203, 224); ">센터1</div>
+    <div style="width: 100%; height: 500px; background-color: rgb(65, 65, 126); ">센터2</div>
+    <div style="width: 100%; height: 500px; background-color: rgb(0, 0, 252); ">센터3</div>
+    <div style="width: 100%; height: 500px; background-color: rgb(11, 11, 12); ">센터4</div>
   </div>
+</section>
 </body>
 
 </html>
