@@ -7,45 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./css/hover.css" />
-
+  <script src="./js/hover.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
- <script>
-  $(function () {
 
-/* ---- ---- ---- ----HEADER---- ---- ---- ---- */
-
-
-// $(".header__nav nav .depth1 > a").on("mouseenter focus", function () {
-//     $(".header__nav nav .depth2_wrap").hide();
-//     $(this).next(".depth2_wrap").show();
-
-//     $(".header__nav nav .depth1").removeClass("on");
-//     $(this).parent('li').addClass('on');
-//     $("#header").addClass("on");
-// });
-// $(".header__nav nav").mouseleave(function () {
-//     $(".header__nav nav .depth2_wrap").hide();
-//     $("#header").removeClass("on");
-//     $(".header__nav nav .depth1").removeClass("on");
-// });
-
-$(".headernav ").on("mouseenter", function(){
- 
-  $("#header").addClass("on");
-
-
-})
-$(".headernav ").mouseleave( function(){
- 
-  $("#header").removeClass("on");
-
- 
-})
-
-});
-
- </script>
 
 <body>
   <section>
@@ -56,7 +21,7 @@ $(".headernav ").mouseleave( function(){
       <input type="checkbox" id="hamburger" />
       <label id="xwith" for="hamburger">
         <span></span>
-        <span></span>
+        <span style="width:60%"></span>
         <span></span>
       </label>
     </div>
@@ -64,11 +29,17 @@ $(".headernav ").mouseleave( function(){
     <nav class="headernav">
       <ul>
         <li class="exm1">
-          <a class="hover1" >데스트<br>아이콘</a>
+          
+          <a class="hover1" style="background: url(/hover/pngwing.com.png); background-size: 40px; background-repeat: no-repeat; background-position: center 0.5rem ;  " >
+          
+
+            데스트<br>아이콘</a>
           <div class="test1">
-            <p class="text1" style="">데이터1</a>
+            <p class="text1">데이터1</a>
               <ul class="sub_text">
-              <li>서브1</li>
+              <li>
+                <a href=""  >서브1</a>
+              </li>
               <li>서브2</li>
               <li>서브3</li>
             </ul>
@@ -79,9 +50,11 @@ $(".headernav ").mouseleave( function(){
           <div class="test1">
             <p class="text1">데이터2-1</a>
             <ul class="sub_text">
-              <li><a href="#none">
+              <li>
+                <a href="">
                 서브2
-              </a></li>
+              </a>
+            </li>
               <li><a href="">서브2</a></li>
               <li><a href="">서브2</a></li>
             </ul>
@@ -90,8 +63,8 @@ $(".headernav ").mouseleave( function(){
         <li class="exm1">
           <a class="hover1" >데스트3<br>아이콘</a>
           <div class="test1">
-            <p href="">데이터3-1</a>
-            <ul>
+            <p class="text1">데이터3-1</a>
+            <ul class="sub_text">
               <li>서브3</li>
               <li>서브3</li>
               <li>서브3</li>
@@ -101,8 +74,8 @@ $(".headernav ").mouseleave( function(){
         <li class="exm1">
           <a class="hover1" >데스트4<br>아이콘</a>
           <div class="test1">
-            <p href="">데이터1</a>
-            <ul>
+            <p class="text1">데이터1</a>
+            <ul class="sub_text">
               <li>서브4</li>
               <li>서브4</li>
               <li>서브4</li>
@@ -112,8 +85,8 @@ $(".headernav ").mouseleave( function(){
         <li class="exm1">
           <a class="hover1" >데스트5<br>아이콘</a>
           <div class="test1">
-            <p href="">데이터1</a>
-            <ul>
+            <p class="text1">데이터1</a>
+            <ul class="sub_text">
               <li>서브5</li>
               <li>서브5</li>
               <li>서브5</li>
@@ -157,3 +130,15 @@ $(".headernav ").mouseleave( function(){
 </body>
 
 </html>
+
+<script>
+  $(function () {
+  $(".headernav ").on("mouseenter", function () {
+    $("#header").addClass("on");
+  });
+  $(".headernav ").mouseleave(function () {
+    $("#header").removeClass("on");
+  });
+});
+
+</script>

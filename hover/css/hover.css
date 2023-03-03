@@ -21,10 +21,13 @@ a {
   line-height: 60px;
   margin: 0 0 0 25px;
   font-size: 17px;
+
+  border-bottom: dashed 1px gray;
 }
 .sub_text > li a {
   color: #000;
   display: block;
+  /* margin: 0 0 0 25px; */
 }
 #header {
   width: 95px;
@@ -49,6 +52,11 @@ a {
   text-align: center;
   font-weight: 800;
   color: rgba(243, 245, 255, 0.97);
+
+  /* background: url(/hover/pngwing.com.png);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center 0.5rem; */
 }
 #header.on:before {
   opacity: 1;
@@ -97,6 +105,8 @@ li {
   padding: 53px 0 0;
 }
 
+/* 행오버구역 */
+
 .exm1:hover {
   background-color: rgba(243, 245, 255, 0.97);
   transition: 0.1s;
@@ -104,7 +114,13 @@ li {
 .exm1:hover .test1 {
   display: block;
 }
+
+/* 네이바 행오버시 색상변환 */
 .hover1:hover {
+  color: gray;
+}
+
+.exm1:hover .hover1 {
   color: gray;
 }
 /* 햄버거 반응 */
@@ -115,9 +131,22 @@ li {
   border-bottom: 1px solid #000;
   margin: auto;
 }
+/* 화살표 이미지 넣기 */
+/* .sub_text a::after {
+  content: "";
+  width: 9px;
+  height: 15px;
+  background: url(../img/common/depth2.png) no-repeat center;
+  position: absolute;
+  left: 85%;
+  top: 12%;
+  margin-top: -7.5px;
+  display: block;
+  border: 1px solid;
+} */
 
 #xwith {
-  top: 25%;
+  top: 35%;
   margin: auto;
 }
 
@@ -127,8 +156,8 @@ input[id="hamburger"] {
 
 input[id="hamburger"] + label {
   display: block;
-  width: 60px;
-  height: 40px;
+  width: 50px;
+  height: 30px;
   position: relative;
   cursor: pointer;
 }
