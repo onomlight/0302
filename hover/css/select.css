@@ -156,7 +156,7 @@
     font-size: 20px;
   }
   .data_bt {
-    width: 250px;
+    width: 250px !important;
     height: 50px;
     border: none;
     background-color: #3b4fb6;
