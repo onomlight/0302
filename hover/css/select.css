@@ -10,6 +10,24 @@
   /* left: 95px; */
   border: 1px solid white;
 }
+/* 탑 */
+.topicon {
+  width: 274px;
+  float: right;
+  height: 47px;
+  background: #f3f7fa;
+  border-radius: 30px;
+  position: relative;
+  text-align: center;
+}
+.iconbt {
+  border: none;
+  background: none;
+  height: 47px;
+
+  width: calc(100% - 100px);
+  font-size: larger;
+}
 /* 리스트 */
 .zone_list {
   float: left;
@@ -145,7 +163,7 @@
 /*  */
 .iconbt {
   align-items: center;
-  display: none;
+  float: none;
 }
 .data_bt {
   width: 250px;
@@ -157,5 +175,5 @@
   bottom: 0;
   border-radius: 0 0 10px 10px;
   color: #fff;
-  font-weight: 500;
+  font-size: larger;
 }
