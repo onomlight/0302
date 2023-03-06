@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/hover.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/select.css">
+  <script src="./js/hover.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<style>
+  .topicon{
+    width: 274px;
+    float: right;
+    height: 47px;
+    background: #f3f7fa;
+    border-radius: 30px;
+    position: relative;
+  }
+  .iconbt{
+    border: none;
+    background: none;
+    height: 47px;
+    /* margin: 0 0 0 25px; */
+    width: calc(100% - 100px);
+  }
+</style>
+<body>
+  <section>
+  <header id="header" class="">
+    
+      <!-- 행오버 기능 햄버거 X 표시 -->
+    <div class="allopen">
+      <input type="checkbox" id="hamburger" />
+      <label id="xwith" for="hamburger">
+        <span></span>
+        <span style="width:60%"></span>
+        <span></span>
+      </label>
+    </div>
+    <!-- nav -->
+    <nav class="headernav">
+      <ul>
+        <li class="exm1">
+          <a class="hover1" style="background: url(/hover/pngwing.com.png); background-size: 40px; background-repeat: no-repeat; background-position: center 0.5rem ;  " >
+          종합검진</a>
+          <div class="test1">
+            <p class="text1">데이터1</a>
+              <ul class="sub_text">
+              <li>
+                <a href=""  >지역선택</a>
+              </li>
+              <li>병원선택</li>
+              <li>검진항목선택</li>
+            </ul>
+          </div>
+        </li>
+        <li class="exm1 ">
+          <a class="hover1" >국가검진</a>
+          <div class="test1">
+            <p class="text1">데이터2-1</a>
+            <ul class="sub_text">
+              <li>
+                <a href="">
+                서브2
+              </a>
+            </li>
+              <li><a href="">서브2</a></li>
+              <li><a href="">서브2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="exm1">
+          <a class="hover1" >전문병원</a>
+          <div class="test1">
+            <p class="text1">데이터3-1</a>
+            <ul class="sub_text">
+              <li>서브3</li>
+              <li>서브3</li>
+              <li>서브3</li>
+            </ul>
+          </div>
+        </li>
+        <li class="exm1">
+          <a class="hover1" >건강분석</a>
+          <div class="test1">
+            <p class="text1">데이터1</a>
+            <ul class="sub_text">
+              <li>서브4</li>
+              <li>서브4</li>
+              <li>서브4</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</section >
+<section class="select_hp">
+      <!-- 전체 감싸는부분 -->
+  <div class="bag_warp" >
+    <div class="main_sl_hp" >
+      <!-- 교직원버튼 -->
+      <div class="topicon">
+        <button class="iconbt"> 교직원 </button>
+      </div>
+      <!-- 메인 제목 -->
+      <div class="bigft" >
+        <h3 class="sub_title"  >지역별 병원선택</h3>
+      </div>
+      <!-- 컨탠츠 -->
+      <div class="m_content">
+      <!-- 리스트 -->
+        <div class="zone_list">
+          <!-- 리스트 패딩 -->
+          <div class="zoneinlist">
+            <p>병원 목록</p> 
+            <div class="con_warp">
+            <ul>
+              <div style="margin-top: 1rem;">
+              <li>서울</li>
+            </div>
+            <div style="margin-top: 1rem;">
+              <li>인천</li>
+            </div>
+            <div style="margin-top: 1rem;">
+              <li>경기</li>
+            </div>
+            
+            <div style="margin-top: 1rem;">
+              <li>대전</li>
+            </div>
+            <div style="margin-top: 1rem;">
+              <li>대구</li>
+            </div>
+            <div style="margin-top: 1rem;">
+              <li>부산</li>
+            </div>
+            <div style="margin-top: 1rem;">
+              <li>광주</li>
+            </div>
+            </ul>
+          </div>
+         
+          </div>
+        </div>
+
+        
+        <div class="data_listbar">
+          <div class="data_list">
+            
+            <div class="data_down">
+              <span>서울</span>
+              <a href="">서울대학교병원</a>
+              
+              <!-- 전체와 일반 오른쪽 시안 확인하기 -->
+              <div >
+                <button  class="data_bt">선택</button>
+              </div>
+            </div>
+            
+          
+            
+            <div class="data_down">
+              <span>서울</span>
+              <a href="">가톨릭대학병원</a>
+              <div >
+                <button  class="data_bt">선택</button>
+              </div>
+            </div>
+            <div class="data_down" id="push">
+              <span>서울</span>
+              <a href="">가톨릭병원2</a>
+              <div >
+                <button  class="data_bt">선택</button>
+              </div>
+            </div>
+            <div class="data_down">
+              <span>서울</span>
+              <a href="">가톨릭병원3</a>
+              <button style="float:right">선택</button>
+            </div>
+            <div class="data_down">
+              <span>서울</span>
+              <a href="">가톨릭병원4</a>
+            </div>
+            <div class="data_down" id="push">
+              <span>서울</span>
+              <a href="">가톨릭병원5</a>
+            </div>
+            <div class="data_down">
+              <span>서울</span>
+              <a href="">가톨릭병원6</a>
+            </div>
+            <div class="data_down">
+              <span>서울</span>
+              <a href="">가톨릭병원7</a>
+            </div>
+            <div class="data_down" id="push">
+              <span>서울</span>
+              <a href="">가톨릭병원8</a>
+            </div>
+          </div>
+
+        </div>
+              <!-- <div style="width: 80%;  margin: auto;  "> 
+                <div style="border-bottom: 1px solid ; position: flex; ">
+                  <button type="">서울</button>
+                  서울대학교 병원 가톨릭병원
+                </div>
+                
+                <div>
+                  <button type="">대구</button>
+                  서울대학교 병원 가톨릭병원
+                </div>
+                <div style="border-bottom: 1px solid ; position: flex;"><button type="">부산</button>
+                  서울대학교 병원 가톨릭병원</div>
+                <div><button type="">광주</button>
+                  서울대학교 병원 가톨릭병원</div>
+                <div style="border-bottom: 1px solid ; position: flex;"><button type="">대전
+                  
+                </button>
+                서울대학교 병원 가톨릭병원</div>
+
+              </div> -->
+      </div>
+    </div>
+
+</div>
+</section>
+
+</body>
+
+</html>
+
+<script>
+  $(function () {
+  $(".headernav ").on("mouseenter", function () {
+    $("#header").addClass("on");
+  });
+  $(".headernav ").mouseleave(function () {
+    $("#header").removeClass("on");
+  });
+});
+
+</script>
