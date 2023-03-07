@@ -32,6 +32,7 @@ a {
 .sub_text > li a {
   color: #000;
   display: block;
+  padding-left: 2rem;
 }
 #header {
   width: 95px;
