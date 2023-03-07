@@ -27,28 +27,26 @@
 
 /* 화살표 이미지 넣기 */
 .sub_text a::after {
-  content: "";
+  content: " ";
   width: 9px;
   height: 15px;
-  /* background: url(../img/common/depth2.png) no-repeat center; */
+  background: url(../img/rigth2.png) no-repeat;
+  background-size: 100%;
   position: absolute;
-  /* left: 85%; */
   right: 15%;
   top: 6.5rem;
-  /* margin-top: -7.5px; */
   display: block;
-  border: 1px solid;
 }
 .sub_text a::before {
-  content: "";
-  width: 8px;
-  height: 8px;
+  content: " ";
+  width: 6px;
+  height: 6px;
   background: #9da3af;
   border-radius: 100%;
   display: block;
   position: absolute;
   left: 18%;
-  top: 6.5rem;
+  top: 6.7rem;
   /* margin-top: -2.5px; */
 }
 
