@@ -86,7 +86,7 @@
 }
 .fullwarp {
   margin: 0 40px 0 40px;
-  padding: 25px 140px 0;
+  padding: 25px 180px 0;
 }
 .mini_name {
   font-size: 26px;
@@ -193,4 +193,19 @@
   height: 31px;
   background: url(/hover/img/icons.png) no-repeat -60px -110px;
   font-size: 0;
+}
+
+.rebt {
+  width: 200px;
+  height: 100px;
+  border: none;
+  background-color: #3b4fb6;
+  font-size: large;
+  color: #fff;
+}
+
+.btn_warp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
 }
