@@ -9,75 +9,13 @@
   <link rel="stylesheet" href="./css/hover.css" />
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/select.css">
-  <link rel="stylesheet" href="./css/health.css"
+  <link rel="stylesheet" href="./css/health.css">
   <script src="./js/hover.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 
 <style>
-.main_text{
-  font-size: 46px;
-    text-align: center;
-    margin-bottom: 55px;
-}
-.section_tb{
-  margin-bottom: 60px;
-  
-}
-.mini_name{
-  
 
-  float: left;
-}
-.mini_nwarp{
-  overflow: hidden;
-    margin-bottom: 18px;
-}
-.tb1{
-  width: 100%;
-    border-top: 1px solid #003c97;
-    border-bottom: 1px solid #003c97;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-}
-.tb_in_list .fR{
-  width: 46%;
-}
-.fR {
-    float: right;
-}
-.tb1 th {
-    background: #ecf1fc;
-    border-top: 1px solid #bcc4d4;
-    border-right: 1px solid #bcc4d4;
-}
-.imp_txt_box {
-    text-decoration: none;
-    font-size: 17px;
-    display: inline-block;
-    background-color: #ececec;
-    color: #333333;
-    border: 0px solid #FFFFFF;
-    border-radius: 5px;
-    padding: 0px 18px;
-    margin-top: 3px;
-    margin-bottom: 10px;
-    line-height: 2;
-}
-.tb1 .d_list li.last {
-    margin-bottom: 15px;
-}
-.d_list li {
-    position: relative;
-    padding-left: 13px;
-    line-height: 1.4;
-}
-.tb_in_list .fL {
-    width: 50%;
-}
-.fL {
-    float: left;
-}
 </style>
 <body>
   <section>
@@ -154,6 +92,7 @@
   <div>
     <!-- 로고 글씨 -->
     <h1 class="main_text">건강검진</h1>
+    <div class="fullwarp">
     <div class="section_tb">
       <div class="mini_warp">
         <h4 class="mini_name">기본형</h4>
@@ -205,9 +144,9 @@
               </div>
             </td>
           </tr>
-          <tr>
-            <th>검사비용</th>
-            <td>
+          <tr >
+            <th id="boredline">검사비용</th>
+            <td  id="boredline">
               <span class="tx_c1">80만원(미혼:75만원)</span>
             </td>
           </tr>
@@ -215,6 +154,12 @@
 
       </table>
 
+    </div>
+    <div>
+      <p class="tb_btm_tx">※ 본원 안전 방역지침에 따라, 국가 감염병(코로나-19) 위기 경보가 해제되는 시점까지 폐기능검사는 유예합니다.</p>
+      <p class="tb_btm_tx">※ 기존 종합건진의 포괄적인 검사보다는 원하는 부분을 선택하여 진행이 가능합니다.</p>
+      <p class="tb_btm_tx">※ 오후 시간대를 이용하여 장기중 한부분만 집중적으로 검사하는 프로그램입니다.</p>
+      <p class="tb_btm_tx">※ 원하시는 검사를 추가하신 후에 상담을 통해 가능여부를 확인 후 진행할 수 있습니다.</p>
     </div>
 
     <!-- 추가 항목 -->
@@ -224,7 +169,8 @@
         <h4 class="mini_name">추가항목</h4>
        
       </div>
-      <table class="tb1">
+      <div class="tb_ty2_wp">
+      <table class="tb_ty2 fL">
         <colgroup>
           <col style="width:160px">
           <col style="width:auto">
@@ -241,7 +187,7 @@
         </thead>
         <tbody>
           <tr>
-            <th rowspan="6">뇌정밀<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+            <th rowspan="6">뇌정밀<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
             <td class="agL detail_q">뇌 CT<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">20만원 </span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
@@ -272,7 +218,7 @@
             <td><span class="tx_c1_2">예약필요 </span></td>
           </tr>
           <tr>
-            <th rowspan="6">심혈관계<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+            <th rowspan="6">심혈관계<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
             <td class="agL detail_q">GXT(운동부하검사)<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">5만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
@@ -303,13 +249,13 @@
             <td><span class="tx_c1_2">예약필요 </span></td>
           </tr>
           <tr>
-            <th>폐암<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+            <th>폐암<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
             <td class="agL detail_q">저선량폐MDCT<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">20만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
           </tr>
           <tr>
-            <th rowspan="3">전신-암<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+            <th rowspan="3">전신-암<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
             <td class="agL detail_q">PET-CT(뇌 포함)<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">110만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
@@ -327,7 +273,7 @@
           
           <!-- 소화기 -->
           <tr>
-            <th rowspan="9">소화기<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+            <th rowspan="9">소화기<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
             <td class="agL detail_q">대장내시경<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">20만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
@@ -337,11 +283,7 @@
             <td class="custom_td_2"><span class="tx_c1">10만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
           </tr>
-<!-- 							<tr> -->
-<!-- 								<td class="agL detail_q">직장내시경<a href="javascript:;" class="btn_q"></a></td> -->
-<!-- 								<td class="custom_td_2"><span class="tx_c1">4만원</span></td> -->
-<!-- 								<td ><span class="tx_c1_2">당일가능 </span></td> -->
-<!-- 							</tr> -->
+
           <tr>
             <td class="agL detail_q">MRHE (간탄성 MRI)<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">30만원</span></td>
@@ -384,7 +326,7 @@
           
           <!-- 척추관절 -->
           <tr>
-            <th rowspan="5">척추관절<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+            <th rowspan="5">척추관절<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
             <td class="agL detail_q">경추MRI(비조영)<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">55만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
@@ -426,7 +368,7 @@
           </thead>
           <tbody>
             <tr>
-              <th rowspan="4">내분비<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+              <th rowspan="4">내분비<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
               <td class="agL detail_q">골밀도(대퇴)<a href="javascript:;" class="btn_q"></a></td>
               <td class="custom_td_2"><span class="tx_c1">3.5만원</span></td>
               <td><span class="tx_c1_2">당일가능 </span></td>
@@ -473,13 +415,13 @@
             
             
             <tr>
-              <th>남성<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+              <th>남성<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
               <td class="agL detail_q">전립선초음파<a href="javascript:;" class="btn_q"></a></td>
               <td class="custom_td_2"><span class="tx_c1">20만원</span></td>
               <td><span class="tx_c1_2">예약필요 </span></td>
             </tr>
             <tr>
-              <th rowspan="5">여성<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+              <th rowspan="5">여성<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
               <td class="agL detail_q">자궁경부액상세포<a href="javascript:;" class="btn_q"></a></td>
               <td class="custom_td_2"><span class="tx_c1">3.5만원</span></td>
               <td><span class="tx_c1_2">당일가능 </span></td>
@@ -542,7 +484,7 @@
               <td><span class="tx_c1_2">예약필요</span></td>
             </tr>
             <tr>
-              <th rowspan="2">수면<br><a href="javascript:;"><img class="mt5" src="/images/K-007.jpg"></a></th>
+              <th rowspan="2">수면<br><a href="javascript:;"><img class="mt5" src="./img/K-007.jpg"></a></th>
               <td class="agL detail_q">수면질검사<a href="javascript:;" class="btn_q"></a></td>
               <td class="custom_td_2"><span class="tx_c1">5만원</span></td>
               <td><span class="tx_c1_2">예약필요 </span></td>
@@ -555,10 +497,10 @@
           </tbody>
         </table>
       </table>
-
+    </div>
     </div>
   </div>
-  
+</div>
 
 </section>
 
