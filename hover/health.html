@@ -56,9 +56,9 @@
           <div class="test1">
             <p class="text1">데이터2-1</a>
             <ul class="sub_text">
-              <li>지역선택</li>
-              <li>병원선택</li>
-              <li>검진항목선택</li>
+              <li><a href="">지역선택</a></li>
+              <li><a href="">병원선택</a></li>
+              <li><a href="">검진항목선택</a></li>
             </ul>
           </div>
         </li>
@@ -67,9 +67,9 @@
           <div class="test1">
             <p class="text1">데이터3-1</a>
             <ul class="sub_text">
-              <li>지역선택</li>
-              <li>병원선택</li>
-              <li>검진항목선택</li>
+              <li><a href="">지역선택</a></li>
+              <li><a href="">병원선택</a></li>
+              <li><a href="">검진항목선택</a></li>
             </ul>
           </div>
         </li>
@@ -78,9 +78,15 @@
           <div class="test1">
             <p class="text1">데이터1</a>
             <ul class="sub_text">
-              <li>서브4</li>
-              <li>서브4</li>
-              <li>서브4</li>
+              <li>
+                <a href="">서브4</a>
+            </li>
+            <li>
+              <a href="">서브4</a>
+          </li>
+          <li>
+            <a href="">서브4</a>
+        </li>
             </ul>
           </div>
         </li>
@@ -155,27 +161,20 @@
       </table>
 
     </div>
+    <!-- 유의 글씨 -->
     <div>
       <p class="tb_btm_tx">※ 본원 안전 방역지침에 따라, 국가 감염병(코로나-19) 위기 경보가 해제되는 시점까지 폐기능검사는 유예합니다.</p>
       <p class="tb_btm_tx">※ 기존 종합건진의 포괄적인 검사보다는 원하는 부분을 선택하여 진행이 가능합니다.</p>
       <p class="tb_btm_tx">※ 오후 시간대를 이용하여 장기중 한부분만 집중적으로 검사하는 프로그램입니다.</p>
-      
-        <p class="tb_btm_tx">※ 아래 추가 검사는 원하시는 검사를 추가하신 후에 상담을 통해 가능여부를 확인 후 진행할 수 있습니다.</p>
-     
-      
+      <p class="tb_btm_tx">※ 아래 추가 검사는 원하시는 검사를 추가하신 후에 상담을 통해 가능여부를 확인 후 진행할 수 있습니다.</p>
     </div>
 
     <!-- 추가 항목 -->
-
     <div class="section_tb">
       <div class="mini_warp">
         <h4 class="mini_name">추가항목</h4>
-      
-       
       </div>
-     
-      <div class="tb_ty2_wp">
-      
+    <div class="tb_ty2_wp">
       <table class="tb_ty2 fL">
         <colgroup>
           <col style="width:160px">
@@ -342,10 +341,7 @@
             <td class="custom_td_2"><span class="tx_c1">55만원</span></td>
             <td><span class="tx_c1_2">예약필요 </span></td>
           </tr>
-<!-- 							<tr> -->
-<!-- 								<td class="agL detail_q">발목(좌/우 택1)</td> -->
-<!-- 								<td><span class="tx_c1">55만원</span></td> -->
-<!-- 							</tr> -->
+
           <tr>
             <td class="agL detail_q">견관절MRI(좌/우 택1)<br>(비조영)<a href="javascript:;" class="btn_q"></a></td>
             <td class="custom_td_2"><span class="tx_c1">55만원</span></td>
@@ -395,7 +391,7 @@
               <td><span class="tx_c1_2">예약필요 </span></td>
             </tr>
             
-            <!-- 종합건진 김명진 책임 요청 -->
+         
             <!-- 유전자 검사 -->
             <tr>
               <th rowspan="4">유전자</th>
@@ -520,4 +516,16 @@
 </body>
 
 </html>
+
+<script>
+  $(function () {
+  $(".headernav ").on("mouseenter", function () {
+    $("#header").addClass("on");
+  });
+  $(".headernav ").mouseleave(function () {
+    $("#header").removeClass("on");
+  });
+});
+
+</script>
 
