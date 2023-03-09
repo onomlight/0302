@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/hover.css" />
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/select.css">
+  </head>
+  <body>
+    <section>
+        <header id="header" class="">
+          
+            <!-- 행오버 기능 햄버거 X 표시 -->
+          <div class="allopen">
+            <input type="checkbox" id="hamburger" />
+            <label id="xwith" for="hamburger">
+              <span></span>
+              <span style="width:60%"></span>
+              <span></span>
+            </label>
+          </div>
+          <!-- nav -->
+          <nav class="headernav">
+            <ul>
+              <li class="exm1">
+                <a class="hover1" style="background: url(../hover/img/h.png); background-size: 40px; background-repeat: no-repeat; background-position: center 0.5rem ; background-size: 70%;  " >
+                종합검진</a>
+                <div class="test1">
+                  <p class="text1">종합검진</a>
+                    <ul class="sub_text">
+                    <li>
+                      <a class="nameplus" href=""  >지역선택</a>
+                    </li>
+                    <li>
+                      <a class="nameplus" href="">병원선택</a>
+                    </li>
+                    <li>
+                      <a  class="nameplus" href="">검진항목선택</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="exm1 ">
+                <a class="hover1" >국가검진</a>
+                <div class="test1">
+                  <p class="text1">데이터2-1</a>
+                  <ul class="sub_text">
+                    <li>
+                      <a href="">지역선택</a></li>
+                    <li>
+                      <a href="">병원선택</a>
+                    </li>
+                    <li>
+                      <a href="">병원선택</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="exm1">
+                <a class="hover1" >전문병원</a>
+                <div class="test1">
+                  <p class="text1">데이터3-1</a>
+                  <ul class="sub_text">
+                    <li><a href="">지역선택</a></li>
+                    <li><a href="">병원선택</a></li>
+                    <li>
+                      <a href="">검진항목선택</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="exm1">
+                <a class="hover1" >건강분석</a>
+                <div class="test1">
+                  <p class="text1">데이터1</a>
+                  <ul class="sub_text">
+                    <li>
+                      <a href="">서브4</a>
+                    </li>
+                    <li>
+                      <a href="">서브4</a>
+                    </li>
+                    <li>
+                      <a href="">서브4</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </section >
+    <section class="data_warp">
+        <h1>검진예약하기</h1>
+      <div class="sec_cal">
+        <div class="cal_nav">
+          <a href="javascript:;" class="nav-btn go-prev">prev</a>
+          <div class="year-month"></div>
+          <a href="javascript:;" class="nav-btn go-next">next</a>
+        </div>
+        <div class="cal_wrap">
+          <div class="days">
+            <div class="day">MON</div>
+            <div class="day">TUE</div>
+            <div class="day">WED</div>
+            <div class="day">THU</div>
+            <div class="day">FRI</div>
+            <div class="day">SAT</div>
+            <div class="day">SUN</div>
+          </div>
+          <div class="dates"></div>
+        </div>
+      </div>
+
+      <!-- 예약작성하는곳 -->
+
+      <div class="typingwarp">
+        <div>
+            <h1 style="padding: 10px; margin: 0;">추가 정보</h1>
+            
+                
+            <div class="name" style="padding: 10px;">
+            <p>성함</p>
+            <input type="text" style="height: 35px ; width: 98%; border: 1px solid #e2e5e8;">
+            </div>
+            <div style="padding: 10px;">
+            <p>연락처</p>
+
+            <input type="text" style="height: 35px; width: 98%; border: 1px solid #e2e5e8;" placeholder="010-1234-1234">
+            
+        </div>
+            <div>
+            <div class="time_warp">
+                <div>
+                    <span>시간선택</span>
+                <ul class="time_list">
+                    <li>09:00</li>
+                    <li>10:00</li>
+                    <li>11:00</li>                  
+                    <li>12:00</li>
+                    <li>13:00</li>
+                    <li>14:00</li>
+                    <li 
+                    style="margin-bottom: 10px;">15:00</li>                  
+                    <li>16:00</li>
+                    <li>17:00</li>
+                </ul>
+            </div>
+
+            </div>
+                                    
+                                        
+            </div>
+
+        </div>
+    </div>
+    <div class="timebtn">
+        <button  value="확정하기">확정하기</button>
+    </div>
+   
+  
+       
+    </section>
+  </body>
+</html>
+<style>
+    .time_warp{
+        padding: 10px;
+        padding-bottom:20px ;
+    }
+    .timebtn{
+        left: 45%;
+        bottom: 10%;
+        display: block;
+        position: fixed;
+        width: 200px;
+        height: 60px;
+        
+
+    }
+    .timebtn button{
+        border: none;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: #3b4fb6;
+    }
+    .data_warp >h1{
+        font-size: 36px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+    .data_warp{
+      position: absolute;
+  width: calc(100% - 95px);
+  min-height: 100%;
+  background: #fff;
+  left: 95px;
+
+    }
+    .typingwarp{
+        float: right;
+        position: relative;
+        right: 25rem;
+        
+        width: 520px;
+        height: 100%;
+        border: 1px solid #e2e5e8;
+        
+    }
+
+    @media (max-width: 1580px) {
+        .typingwarp{
+            right: 10rem;
+        }
+        .sec_cal{
+           
+        }
+}
+.time_list > li{
+    display: block;
+    margin: 3px 2px;
+    float: left;
+    text-align: center;
+    padding: 2%;
+    font-size: 15px;
+    color: #fff;
+    width: 28%;
+    background: #ccc;
+    border: 1px solid #e2e5e8;;
+}
+
+
+</style>
+<style>
+  /* section calendar */
+
+  .sec_cal {
+    width: 390px;
+    /* margin: 0 5rem 0 2rem; */
+    left: 16%;
+    top: 20%;
+    font-family: "NotoSansR";
+    position: absolute;
+  }
+
+  .sec_cal .cal_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 78px;
+  }
+
+  .sec_cal .cal_nav .year-month {
+    width: 300px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .sec_cal .cal_nav .nav {
+    display: flex;
+    border: 1px solid #333333;
+    border-radius: 5px;
+  }
+
+  .sec_cal .cal_nav .go-prev,
+  .sec_cal .cal_nav .go-next {
+    display: block;
+    width: 50px;
+    height: 78px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec_cal .cal_nav .go-prev::before,
+  .sec_cal .cal_nav .go-next::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #000;
+    border-width: 3px 3px 0 0;
+    transition: border 0.1s;
+  }
+
+  .sec_cal .cal_nav .go-prev:hover::before,
+  .sec_cal .cal_nav .go-next:hover::before {
+    border-color: #ed2a61;
+  }
+
+  .sec_cal .cal_nav .go-prev::before {
+    transform: rotate(-135deg);
+  }
+
+  .sec_cal .cal_nav .go-next::before {
+    transform: rotate(45deg);
+  }
+
+  .sec_cal .cal_wrap {
+    padding-top: 40px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .sec_cal .cal_wrap .days {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sec_cal .cal_wrap::after {
+    top: 368px;
+  }
+
+  .sec_cal .cal_wrap .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 7);
+    text-align: left;
+    /* color: #999; */
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .current.today {
+    background: rgb(242 242 242);
+  }
+
+  .sec_cal .cal_wrap .dates {
+    display: flex;
+    flex-flow: wrap;
+    height: 290px;
+  }
+
+  .sec_cal .cal_wrap .day:nth-child(7n -1) {
+    color: #3c6ffa;
+  }
+
+  .sec_cal .cal_wrap .day:nth-child(7n) {
+    color: #ed2a61;
+  }
+
+  .sec_cal .cal_wrap .day.disable {
+    color: #ddd;
+  }
+ 
+
+</style>
+<script>
+  $(document).ready(function () {
+    calendarInit();
+  });
+  /*
+    달력 렌더링 할 때 필요한 정보 목록 
+
+    현재 월(초기값 : 현재 시간)
+    금월 마지막일 날짜와 요일
+    전월 마지막일 날짜와 요일
+*/
+
+  function calendarInit() {
+    // 날짜 정보 가져오기
+    var date = new Date(); // 현재 날짜(로컬 기준) 가져오기
+    var utc = date.getTime() + date.getTimezoneOffset() * 60 * 1000; // uct 표준시 도출
+    var kstGap = 9 * 60 * 60 * 1000; // 한국 kst 기준시간 더하기
+    var today = new Date(utc + kstGap); // 한국 시간으로 date 객체 만들기(오늘)
+
+    var thisMonth = new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate()
+    );
+    // 달력에서 표기하는 날짜 객체
+
+    var currentYear = thisMonth.getFullYear(); // 달력에서 표기하는 연
+    var currentMonth = thisMonth.getMonth(); // 달력에서 표기하는 월
+    var currentDate = thisMonth.getDate(); // 달력에서 표기하는 일
+
+    // kst 기준 현재시간
+    // console.log(thisMonth);
+
+    // 캘린더 렌더링
+    renderCalender(thisMonth);
+
+    function renderCalender(thisMonth) {
+      // 렌더링을 위한 데이터 정리
+      currentYear = thisMonth.getFullYear();
+      currentMonth = thisMonth.getMonth();
+      currentDate = thisMonth.getDate();
+
+      // 이전 달의 마지막 날 날짜와 요일 구하기
+      var startDay = new Date(currentYear, currentMonth, 0);
+      var prevDate = startDay.getDate();
+      var prevDay = startDay.getDay();
+
+      // 이번 달의 마지막날 날짜와 요일 구하기
+      var endDay = new Date(currentYear, currentMonth + 1, 0);
+      var nextDate = endDay.getDate();
+      var nextDay = endDay.getDay();
+
+      // console.log(prevDate, prevDay, nextDate, nextDay);
+
+      // 현재 월 표기
+      $(".year-month").text(currentYear + "." + (currentMonth + 1));
+
+      // 렌더링 html 요소 생성
+      calendar = document.querySelector(".dates");
+      calendar.innerHTML = "";
+
+      // 지난달
+      for (var i = prevDate - prevDay + 1; i <= prevDate; i++) {
+        calendar.innerHTML =
+          calendar.innerHTML + '<div class="day prev disable">' + i + "</div>";
+      }
+      // 이번달
+      for (var i = 1; i <= nextDate; i++) {
+        calendar.innerHTML =
+          calendar.innerHTML + '<div class="day current">' + i + "</div>";
+      }
+      // 다음달
+      for (var i = 1; i <= (7 - nextDay == 7 ? 0 : 7 - nextDay); i++) {
+        calendar.innerHTML =
+          calendar.innerHTML + '<div class="day next disable">' + i + "</div>";
+      }
+
+      // 오늘 날짜 표기
+      if (today.getMonth() == currentMonth) {
+        todayDate = today.getDate();
+        var currentMonthDate = document.querySelectorAll(".dates .current");
+        currentMonthDate[todayDate - 1].classList.add("today");
+      }
+    }
+
+    // 이전달로 이동
+    $(".go-prev").on("click", function () {
+      thisMonth = new Date(currentYear, currentMonth - 1, 1);
+      renderCalender(thisMonth);
+    });
+
+    // 다음달로 이동
+    $(".go-next").on("click", function () {
+      thisMonth = new Date(currentYear, currentMonth + 1, 1);
+      renderCalender(thisMonth);
+    });
+  }
+
+
+
+</script>
+<script>
+      $(function () {
+  $(".headernav ").on("mouseenter", function () {
+    $("#header").addClass("on");
+  });
+  $(".headernav ").mouseleave(function () {
+    $("#header").removeClass("on");
+  });
+});
+</script>

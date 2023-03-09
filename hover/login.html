@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
     <!-- 1번 시안  -->
     <section>
         <div class="login-wrap">
-            <div class="login-html">
+            <div class="login-html ">
               <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">로그인</label>
-              <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">회원가입</label>
+              <input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">회원가입</label>
               <div class="login-form">
                 <div class="sign-in-htm">
                   <div class="group">
@@ -36,6 +37,10 @@
                 </div>
                 <div class="sign-up-htm">
                   <div class="group">
+                    <label for="user" class="label">이름</label>
+                    <input id="user" type="text" class="input">
+                  </div>
+                  <div class="group">
                     <label for="user" class="label">아이디</label>
                     <input id="user" type="text" class="input">
                   </div>
@@ -48,7 +53,11 @@
                     <input id="pass" type="password" class="input" data-type="password">
                   </div>
                   <div class="group">
-                    <label for="pass" class="label">이메일</label>
+                    <label for="pass" class="label">전화번호</label>
+                    <input id="pass" type="text" class="input">
+                  </div>
+                  <div class="group">
+                    <label for="pass" class="label">생년월일</label>
                     <input id="pass" type="text" class="input">
                   </div>
                   <div class="group">
@@ -217,8 +226,31 @@ a{color:inherit;text-decoration:none}
 .foot-lnk{
   text-align:center;
 }
+
+.sign-up:checked > .login-html{
+  
+
+}
+.upclass{
+  padding-top: 40px !important;
+  transition: 1s;
+}
     </style>
     </section>
    
 </body>
 </html>
+<script>
+  $(document).ready(function(){
+    $(".sign-up").change(function(){
+        if($(".sign-up").is(":checked")){
+          $(".login-html").addClass("upclass")
+        }
+    });
+    $(".sign-in").change(function(){
+        if($(".sign-in").is(":checked")){
+            $(".login-html").removeClass("upclass")
+        }
+    });
+});
+</script>
