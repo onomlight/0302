@@ -196,6 +196,9 @@
   width: 98%;
   border: 1px solid #e2e5e8;
 }
+.daname {
+  padding: 10px;
+}
 p {
   margin: 0;
 }
