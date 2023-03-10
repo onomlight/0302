@@ -132,6 +132,7 @@
 }
 
 .data_down > a {
+  color: black;
   font-size: 25px;
   font-weight: 500;
   display: block;
