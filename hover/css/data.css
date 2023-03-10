@@ -3,10 +3,10 @@
   padding-bottom: 20px;
 }
 .timebtn {
-  left: 47%;
-  bottom: 10%;
+  top: 80%;
+  margin: auto;
   display: block;
-  position: fixed;
+  position: sticky;
   width: 200px;
   height: 60px;
 }
@@ -64,7 +64,7 @@
 .sec_cal {
   width: 390px;
   /* margin: 0 5rem 0 2rem; */
-  left: 16%;
+  left: 23%;
   top: 20%;
   font-family: "NotoSansR";
   position: absolute;
