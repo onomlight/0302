@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="./css/login.css" />
+    <script src="./js/login.js"></script>
   </head>
   <body>
     <!-- 1번 시안  -->
@@ -94,17 +95,3 @@
     </section>
   </body>
 </html>
-<script>
-  $(document).ready(function () {
-    $(".sign-up").change(function () {
-      if ($(".sign-up").is(":checked")) {
-        $(".login-html").addClass("upclass");
-      }
-    });
-    $(".sign-in").change(function () {
-      if ($(".sign-in").is(":checked")) {
-        $(".login-html").removeClass("upclass");
-      }
-    });
-  });
-</script>
