@@ -110,7 +110,7 @@
 .tb_ty2 td {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
-  background: url(/images/bg_tb_td.gif) repeat-y;
+  background: url(/img/bg_tb_td.gif) repeat-y;
 }
 .tb_ty2 .agL {
   text-align: left;
@@ -128,7 +128,7 @@
 .tb_ty2 td {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
-  background: url(/images/bg_tb_td.gif) repeat-y;
+  background: url(/img/bg_tb_td.gif) repeat-y;
 }
 .detail_q {
   position: relative;
@@ -161,24 +161,24 @@
 }
 .tb_ty2 thead th {
   padding: 10px 0;
-  background: #ecf1fc url(/hover/img/bg_tb_th.gif) repeat-y;
+  background: #ecf1fc url(/img/bg_tb_th.gif) repeat-y;
   font-family: "NotoSansCJKkr-medium", arial;
 }
 .tb_ty2 tbody th,
 .tb_ty2 td {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
-  background: url(/hover/img/bg_tb_td.gif) repeat-y;
+  background: url(/img/bg_tb_td.gif) repeat-y;
 }
 .tb_ty2 tbody th,
 .tb_ty2 td {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
-  background: url(/hover/img/bg_tb_td.gif) repeat-y;
+  background: url(/img/bg_tb_td.gif) repeat-y;
 }
 .tb_ty2 {
   border-collapse: separate;
-  background: url(/hover/img/bg_tb_td.gif) repeat-y 100% 0;
+  background: url(/img/bg_tb_td.gif) repeat-y 100% 0;
 }
 .detail_q .btn_q {
   position: absolute;
@@ -191,7 +191,7 @@
   display: inline-block;
   width: 31px;
   height: 31px;
-  background: url(/hover/img/icons.png) no-repeat -60px -110px;
+  background: url(/img/icons.png) no-repeat -60px -110px;
   font-size: 0;
 }
 

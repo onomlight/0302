@@ -16,3 +16,9 @@ function disnone() {
   $(".page_loader").addClass("none");
 }
 setTimeout(disnone, 10000);
+
+function pl() {
+  setTimeout(function () {
+    $(".page_loader").fadeOut();
+  }, 0);
+}
