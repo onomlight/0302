@@ -48,8 +48,6 @@
 }
 .tb1 th {
   background: #ecf1fc;
-  /* border-top: 1px solid #bcc4d4;
-    border-right: 1px solid #bcc4d4; */
 }
 #boredline {
   border-top: 1px solid #bcc4d4;
@@ -150,15 +148,11 @@
 }
 .tb_ty2 {
   width: 100%;
-  /* border-top: 1px solid #003c97; */
-  /* border-bottom: 1px solid #003c97; */
 }
 .tb_ty2 tbody {
   border: 1px solid #ddd;
 }
-.tb_ty2 thead th {
-  /* border-bottom: 1px solid #003c97; */
-}
+
 .tb_ty2 thead th {
   padding: 10px 0;
   background: #ecf1fc url(/img/bg_tb_th.gif) repeat-y;
