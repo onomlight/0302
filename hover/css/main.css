@@ -270,21 +270,27 @@ li {
 }
 
 .headerone {
-  width: calc(100% - 95px);
-  height: 200px;
+  height: 100px;
   background: #fff;
-  left: 95px;
 
+  position: relative;
   background-color: green;
   top: 0;
 }
 
 .footer {
-  width: calc(100% - 95px);
-
-  height: 200px;
+  position: relative;
+  height: 100px;
   background: #fff;
-  left: 95px;
+  margin: 0;
   background-color: blue;
   bottom: 0;
 }
+/* .maintop {
+  width: calc(100% - 95px);
+  position: absolute;
+  height: 600px;
+  background: #fff;
+
+  background-color: yellow;
+} */
