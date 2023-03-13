@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <link rel="stylesheet" href="./css/login.css" />
-    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js"></script>
   </head>
   <body>
     <section>
@@ -122,83 +122,3 @@
     </section>
   </body>
 </html>
-<style>
-  .group input[type="radio"] {
-    display: none;
-  }
-  .group input[type="radio"] + label {
-    display: inline-block;
-    cursor: pointer;
-    height: 30px;
-    width: 185px;
-    /* border: 1px solid #333; */
-
-    line-height: 24px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-    border-radius: 25px;
-  }
-  .group input[type="radio"] + label {
-    background: rgba(219, 219, 219, 0.3);
-    color: #333;
-  }
-  .group input[type="radio"]:checked + label {
-    background-color: #333;
-    color: #fff;
-  }
-</style>
-<script>
-  function lchk() {
-    if (!mform.id.value) {
-      alert("아이디를 입력하세요");
-      mform.id.focus();
-      return;
-    }
-    if (!mform.pw.value) {
-      alert("비밀번호를 입력하세요");
-      mform.pw.focus();
-      return;
-    }
-    mform.submit();
-  }
-  function mchk() {
-    if (!sform.name.value) {
-      alert("이름을 입력하세요");
-      sform.name.focus();
-      return;
-    }
-    if (!sform.id.value) {
-      alert("아이디를 입력하세요");
-      sform.id.focus();
-      return;
-    }
-    if (!sform.pw.value) {
-      alert("비밀번호를 입력하세요");
-      sform.pw.focus();
-      return;
-    }
-    if (!sform.pw1.value) {
-      alert("비밀번호확인을 입력하세요");
-      sform.pw1.focus();
-      return;
-    }
-    if (sform.pw.value != sform.pw1.value) {
-      alert("비밀번호를 잘못입력했습니다. 다시 입력해 주세요.");
-      sform.pw.value = "";
-      sform.pw1.value = "";
-      return;
-    }
-    if (!sform.hu.value) {
-      alert("휴대폰번호를 입력하세요");
-      sform.hu.focus();
-      return;
-    }
-    if (!sform.birth.value) {
-      alert("생년월일을 입력하세요");
-      sform.birth.focus();
-      return;
-    }
-    sform.submit();
-  }
-</script>

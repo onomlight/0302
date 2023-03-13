@@ -91,7 +91,7 @@ a {
 .login-form .group .input,
 .login-form .group .button {
   width: 100%;
-  color: #fff;
+  color: black;
   display: block;
 }
 .login-form .group .input,
@@ -182,4 +182,29 @@ a {
 }
 .sign-in-htm {
   top: 10% !important;
+}
+
+.group input[type="radio"] {
+  display: none;
+}
+.group input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  height: 30px;
+  width: 185px;
+  /* border: 1px solid #333; */
+
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 25px;
+}
+.group input[type="radio"] + label {
+  background: rgba(219, 219, 219, 0.3);
+  color: #333;
+}
+.group input[type="radio"]:checked + label {
+  background-color: #333;
+  color: #fff;
 }
