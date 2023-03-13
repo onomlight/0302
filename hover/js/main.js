@@ -21,4 +21,5 @@ function pl() {
   setTimeout(function () {
     $(".page_loader").fadeOut();
   }, 0);
+  // alert("click");
 }

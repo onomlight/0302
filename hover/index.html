@@ -16,6 +16,7 @@
 
 
 <body>
+  <!-- 로딩화면 -->
   <section class="display">
     <div class="page_loader">
       <div class="loader_txt">
@@ -62,17 +63,8 @@
           <span>개</span>
           <span>발</span>
         </div>
-        <div style="margin: 100px auto" onclick="pl()">
-          <span
-            style="
-              font-size: 30px;
-              width: 300px;
-              padding: 10px 20px;
-              text-align: center;
-              background: #000000;
-              border-radius: 10px;
-            "
-            >SKIP</span
+        <div class="skipbtn"  onclick="pl()">
+          <span>SKIP</span
           >
         </div>
       </div>
@@ -161,12 +153,5 @@
 </body>
 
 </html>
-<script>
-  
-// function pl() {
-//     setTimeout(function(){
-//         $(".page_loader").fadeOut();
-//     }, 0);
-// }
-</script>
+
 

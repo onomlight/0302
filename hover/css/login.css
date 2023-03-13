@@ -28,7 +28,7 @@ a {
 
   margin: auto;
   max-width: 525px;
-  min-height: 670px;
+  min-height: 685px;
   position: absolute;
   /* background:url() no-repeat center; */
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
@@ -42,7 +42,7 @@ a {
   height: 100%;
   position: absolute;
   padding: 90px 70px 50px 70px;
-  background: #3b4fb6;
+  background: #ffffff;
 }
 .login-html .sign-in-htm,
 .login-html .sign-up-htm {
@@ -75,7 +75,7 @@ a {
 }
 .login-html .sign-in:checked + .tab,
 .login-html .sign-up:checked + .tab {
-  color: #fff;
+  color: #000000;
   border-color: #1161ee;
 }
 .login-form {
@@ -99,7 +99,7 @@ a {
   border: none;
   padding: 15px 20px;
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(219, 219, 219, 0.3);
 }
 .login-form .group input[data-type="password"] {
   text-security: circle;
@@ -179,4 +179,7 @@ a {
 .upclass {
   padding-top: 40px !important;
   transition: 1s;
+}
+.sign-in-htm {
+  top: 10% !important;
 }

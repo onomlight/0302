@@ -10,7 +10,6 @@
     <script src="./js/login.js"></script>
   </head>
   <body>
-    <!-- 1번 시안  -->
     <section>
       <div class="login-wrap">
         <div class="login-html">
@@ -26,72 +25,180 @@
             >회원가입</label
           >
           <div class="login-form">
-            <div class="sign-in-htm">
-              <div class="group">
-                <label for="user" class="label">아이디</label>
-                <input id="user" type="text" class="input" />
+            <form name="mform" method="post" action="loginchk.php">
+              <div class="sign-in-htm">
+                <div class="group">
+                  <label for="user" class="label">아이디</label>
+                  <input id="user" name="id" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">비밀번호</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    name="pw" />
+                </div>
+                <div class="group">
+                  <input id="check" type="checkbox" class="check" checked />
+                  <label for="check"
+                    ><span class="icon"></span> 로그인 유지</label
+                  >
+                </div>
+                <div class="group">
+                  <input
+                    type="button"
+                    class="button"
+                    value="로그인"
+                    onclick="lchk()"
+                    style="color: #ffffff" />
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk"></div>
               </div>
-              <div class="group">
-                <label for="pass" class="label">비밀번호</label>
-                <input
-                  id="pass"
-                  type="password"
-                  class="input"
-                  data-type="password" />
+            </form>
+
+            <form name="sform" method="post" action="memberchk.php">
+              <div class="sign-up-htm">
+                <div class="group">
+                  <span for="user" class="label">이름</label>
+                  <input id="user" name="name" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="user" class="label">아이디</label>
+                  <input id="user" name="id" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">비밀번호</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    name="pw" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">비밀번호 확인</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    name="pw1" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">성별</label>
+                  <input type="radio" id="select" name="sex" value="M" /><label
+                    for="select"
+                    >남자</label
+                  >
+                  <input type="radio" id="select2" name="sex" value="F" /><label
+                    for="select2"
+                    >여자</label
+                  >
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">전화번호</label>
+                  <input id="pass" name="hu" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">생년월일</label>
+                  <input id="pass" name="birth" type="text" class="input" />
+                </div>
+                <div class="group" style="margin-top: 20px">
+                  <input
+                    type="button"
+                    class="button"
+                    value="회원가입"
+                    onclick="mchk()"
+                    style="color: #ffffff" />
+                </div>
               </div>
-              <div class="group">
-                <input id="check" type="checkbox" class="check" checked />
-                <label for="check"
-                  ><span class="icon"></span> 로그인 유지</label
-                >
-              </div>
-              <div class="group">
-                <input type="submit" class="button" value="로그인" />
-              </div>
-              <div class="hr"></div>
-              <div class="foot-lnk"></div>
-            </div>
-            <div class="sign-up-htm">
-              <div class="group">
-                <label for="user" class="label">이름</label>
-                <input id="user" type="text" class="input" />
-              </div>
-              <div class="group">
-                <label for="user" class="label">아이디</label>
-                <input id="user" type="text" class="input" />
-              </div>
-              <div class="group">
-                <label for="pass" class="label">비밀번호</label>
-                <input
-                  id="pass"
-                  type="password"
-                  class="input"
-                  data-type="password" />
-              </div>
-              <div class="group">
-                <label for="pass" class="label">비밀번호 확인</label>
-                <input
-                  id="pass"
-                  type="password"
-                  class="input"
-                  data-type="password" />
-              </div>
-              <div class="group">
-                <label for="pass" class="label">전화번호</label>
-                <input id="pass" type="text" class="input" />
-              </div>
-              <div class="group">
-                <label for="pass" class="label">생년월일</label>
-                <input id="pass" type="text" class="input" />
-              </div>
-              <div class="group" style="margin-top: 45px">
-                <input type="submit" class="button" value="회원가입" />
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-      <style></style>
     </section>
   </body>
 </html>
+<style>
+  .group input[type="radio"] {
+    display: none;
+  }
+  .group input[type="radio"] + label {
+    display: inline-block;
+    cursor: pointer;
+    height: 30px;
+    width: 185px;
+    /* border: 1px solid #333; */
+
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 25px;
+  }
+  .group input[type="radio"] + label {
+    background: rgba(219, 219, 219, 0.3);
+    color: #333;
+  }
+  .group input[type="radio"]:checked + label {
+    background-color: #333;
+    color: #fff;
+  }
+</style>
+<script>
+  function lchk() {
+    if (!mform.id.value) {
+      alert("아이디를 입력하세요");
+      mform.id.focus();
+      return;
+    }
+    if (!mform.pw.value) {
+      alert("비밀번호를 입력하세요");
+      mform.pw.focus();
+      return;
+    }
+    mform.submit();
+  }
+  function mchk() {
+    if (!sform.name.value) {
+      alert("이름을 입력하세요");
+      sform.name.focus();
+      return;
+    }
+    if (!sform.id.value) {
+      alert("아이디를 입력하세요");
+      sform.id.focus();
+      return;
+    }
+    if (!sform.pw.value) {
+      alert("비밀번호를 입력하세요");
+      sform.pw.focus();
+      return;
+    }
+    if (!sform.pw1.value) {
+      alert("비밀번호확인을 입력하세요");
+      sform.pw1.focus();
+      return;
+    }
+    if (sform.pw.value != sform.pw1.value) {
+      alert("비밀번호를 잘못입력했습니다. 다시 입력해 주세요.");
+      sform.pw.value = "";
+      sform.pw1.value = "";
+      return;
+    }
+    if (!sform.hu.value) {
+      alert("휴대폰번호를 입력하세요");
+      sform.hu.focus();
+      return;
+    }
+    if (!sform.birth.value) {
+      alert("생년월일을 입력하세요");
+      sform.birth.focus();
+      return;
+    }
+    sform.submit();
+  }
+</script>

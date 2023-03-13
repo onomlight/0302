@@ -192,6 +192,7 @@ a {
   font-weight: 800;
   color: #fff;
 }
+
 #header.on:before {
   opacity: 1;
   visibility: visible;
@@ -253,4 +254,17 @@ li {
 .onewarp > li {
   font-size: 17px;
   font-weight: 500;
+}
+
+.skipbtn {
+  margin: 100px auto;
+}
+
+.skipbtn > span {
+  font-size: 30px;
+  width: 300px;
+  padding: 10px 20px;
+  text-align: center;
+  background: #000000;
+  border-radius: 10px;
 }
