@@ -7,7 +7,6 @@
 }
 .main_sl_hp {
   position: relative;
-  /* left: 95px; */
   border: 1px solid white;
 }
 /* 탑 */
@@ -147,7 +146,6 @@
   height: 50px;
   margin: 7px 0;
 }
-/*  */
 .iconbt {
   align-items: center;
   float: none;
@@ -172,9 +170,6 @@
   }
   .data_down > a {
     font-size: 20px;
-  }
-  .data_bt {
-    /* width: 250px; */
   }
 }
 .data_down:nth-child(3n) {
