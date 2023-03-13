@@ -268,3 +268,23 @@ li {
   background: #000000;
   border-radius: 10px;
 }
+
+.headerone {
+  width: calc(100% - 95px);
+  height: 200px;
+  background: #fff;
+  left: 95px;
+
+  background-color: green;
+  top: 0;
+}
+
+.footer {
+  width: calc(100% - 95px);
+
+  height: 200px;
+  background: #fff;
+  left: 95px;
+  background-color: blue;
+  bottom: 0;
+}
