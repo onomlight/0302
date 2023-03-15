@@ -1,158 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/loding.css" />
+    <link rel="stylesheet" href="css/main.css">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/hover.css" />
-  <link rel="stylesheet" href="css/main.css">
-  
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="/js/main.js"></script>
-</head>
-
-
-<body>
-  <!-- 로딩화면 -->
- 
-  <section class="display">
-    <div class="page_loader">
-      <div class="loader_txt">
-        <img src="./img/mlogo.png" />
-        <h6><span>건강</span>검진 <span>예약은 </span>토탈헬스케어에서,</h6>
-        <div class="loading_txt">
-          <span>병</span>
-          <span>원</span>
-          <span>(</span>
-          <span>E</span>
-          <span>M</span>
-          <span>R</span>
-          <span>)</span>
-          <span>프</span>
-          <span>로</span>
-          <span>그</span>
-          <span>램</span>
-          <span>&nbsp;</span>
-          <span>개</span>
-          <span>발</span>
-          <span>사</span>
-          <span>와</span>
-          <span>&nbsp;</span>
-          <span>업</span>
-          <span>무</span>
-          <span>제</span>
-          <span>휴</span>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <section class="display">
+      <div class="page_loader">
+        <div class="loader_txt">
+          <img src="./img/mlogo.png" />
+          <h6><span>건강</span>검진 <span>예약은 </span>토탈헬스케어에서,</h6>
+          <div class="loading_txt">
+            <span>병</span>
+            <span>원</span>
+            <span>(</span>
+            <span>E</span>
+            <span>M</span>
+            <span>R</span>
+            <span>)</span>
+            <span>프</span>
+            <span>로</span>
+            <span>그</span>
+            <span>램</span>
+            <span>&nbsp;</span>
+            <span>개</span>
+            <span>발</span>
+            <span>사</span>
+            <span>와</span>
+            <span>&nbsp;</span>
+            <span>업</span>
+            <span>무</span>
+            <span>제</span>
+            <span>휴</span>
+          </div>
+          <div class="loading_txt" style="margin-top: 50px;">
+            <span>관</span>
+            <span>리</span>
+            <span>병</span>
+            <span>원</span>
+            <span>&nbsp;</span>
+            <span>3</span>
+            <span>,</span>
+            <span>0</span>
+            <span>0</span>
+            <span>0</span>
+            <span>곳</span>
+            <span>&nbsp;</span>
+            <span>연</span>
+            <span>동</span>
+            <span>개</span>
+            <span>발</span>
+          </div>
+          <div class="skipbtn"  onclick="pl()">
+            <span>SKIP</span
+            >
+          </div>
         </div>
-        <div class="loading_txt">
-          <span>관</span>
-          <span>리</span>
-          <span>병</span>
-          <span>원</span>
-          <span>&nbsp;</span>
-          <span>3</span>
-          <span>,</span>
-          <span>0</span>
-          <span>0</span>
-          <span>0</span>
-          <span>곳</span>
-          <span>&nbsp;</span>
-          <span>연</span>
-          <span>동</span>
-          <span>개</span>
-          <span>발</span>
-        </div>
-        <div class="skipbtn"  onclick="pl()">
-          <span>SKIP</span
+      </div>
+    </section> 
+    <section>
+      <div class="login-wrap">
+        <div class="login-html">
+          <input
+           
+            id="tab-1"
+            type="radio"
+            name="tab"
+            class="sign-in"
+            checked /><label for="tab-1" class="tab" >로그인</label>
+          <input id="tab-2" type="radio" name="tab" class="sign-up" /><label
+            for="tab-2"
+            class="tab"
+            >회원가입</label
           >
+          <div class="login-form">
+            <form name="mform" method="post" action="select.html">
+              <div class="sign-in-htm">
+                <div class="group">
+                  <label for="user" class="label">아이디</label>
+                  <input id="user" name="id" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">비밀번호</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    name="pw" />
+                </div>
+                <div class="group">
+                  <input id="check" type="checkbox" class="check" checked />
+                  <label for="check"
+                    ><span class="icon"></span> 로그인 유지</label
+                  >
+                </div>
+                <div class="group">
+                  <input
+                    type="button"
+                    class="button"
+                    value="로그인"
+                    onclick="mform.submit()"
+                    style="color: #ffffff" />
+                </div>
+                <div class="hr"></div>
+                <div class="foot-lnk"></div>
+              </div>
+            </form>
+
+            <form name="sform" method="post" action="select.html">
+              <div class="sign-up-htm">
+                <div class="group">
+                  <span for="user" class="label">이름</label>
+                  <input id="user" name="name" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="user" class="label">아이디</label>
+                  <input id="user" name="id" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">비밀번호</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    name="pw" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">비밀번호 확인</label>
+                  <input
+                    id="pass"
+                    type="password"
+                    class="input"
+                    data-type="password"
+                    name="pw1" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">성별</label>
+                  <input type="radio" id="select" name="sex" value="M" /><label
+                    for="select"
+                    >남자</label
+                  >
+                  <input type="radio" id="select2" name="sex" value="F" /><label
+                    for="select2"
+                    >여자</label
+                  >
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">전화번호</label>
+                  <input id="pass" name="hu" type="text" class="input" />
+                </div>
+                <div class="group">
+                  <label for="pass" class="label">생년월일</label>
+                  <input id="pass" name="birth" type="text" class="input" />
+                </div>
+                <div class="group" style="margin-top: 20px">
+                  <input
+                    type="button"
+                    class="button"
+                    value="회원가입"
+                    onclick="mchk()"
+                    style="color: #ffffff" />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section> 
-
-  <section id="leftbar">
-    <header id="header" class="">
-      
-        <!-- 행오버 기능 햄버거 X 표시 -->
-      <div class="allopen">
-        <input type="checkbox" id="hamburger" />
-        <label id="xwith" for="hamburger">
-          <span></span>
-          <span style="width:60%"></span>
-          <span></span>
-        </label>
-      </div>
-      <!-- nav -->
-      <nav class="headernav">
-        <ul>
-          <li class="exm1">
-            <a class="hover1" style="background: url(/img/h.png); background-size: 40px; background-repeat: no-repeat; background-position: center 0.5rem ; background-size: 70%;  " >
-            종합검진</a>
-            <div class="test1">
-              <p class="text1">종합검진</a>
-                <ul class="sub_text">
-                <li>
-                  <a class="nameplus" href=""  >지역선택</a>
-                </li>
-                <li>
-                  <a class="nameplus" href="">병원선택</a>
-                </li>
-                <li>
-                  <a  class="nameplus" href="">검진항목선택</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="exm1 ">
-            <a class="hover1" >국가검진</a>
-            <div class="test1">
-              <p class="text1">데이터2-1</a>
-              <ul class="sub_text">
-                <li><a href="">지역선택</a></li>
-                <li><a href="">병원선택</a></li>
-                <li><a href="">검진항목선택</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="exm1">
-            <a class="hover1" >전문병원</a>
-            <div class="test1">
-              <p class="text1">데이터3-1</a>
-              <ul class="sub_text">
-                <li>
-                  <a href="">지역선택</a>
-                  </li>
-                <li><a href="">병원선택</a></li>
-                <li><a href="">검진항목선택</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="exm1">
-            <a class="hover1" >건강분석</a>
-            <div class="test1">
-              <p class="text1">데이터1</a>
-              <ul class="sub_text">
-                <li>
-                  <a href="">서브4</a>
-              </li>
-              <li>
-                <a href="">서브4</a>
-            </li>
-            <li>
-              <a href="">서브4</a>
-          </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </section >
-
-</body>
-
+    </section>
+  </body>
 </html>
-
-

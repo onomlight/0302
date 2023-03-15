@@ -140,7 +140,7 @@ a {
   transform: scale(0) rotate(0);
 }
 .login-form .group .check:checked + label {
-  color: #fff;
+  color: #6a6f8c;
 }
 .login-form .group .check:checked + label .icon {
   background: #1161ee;
